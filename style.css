@@ -8,15 +8,8 @@ body {
     color: white;
 }
 
-/* Navbar */
-
 /* Kontainer Utama */
-.container,
-.container2,
-.container3,
-.container4,
-.container5,
-.container6 {
+.container, .container2, .container3, .container4, .container5, .container6 {
     width: 60%;
     margin: 20px auto;
     background: rgba(255, 255, 255, 0.2);
@@ -25,8 +18,7 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(10px);
     text-align: center;
-    position: relative;
-    padding-top: 20px;
+   
     transition: 0.3s;
 }
 
@@ -37,14 +29,7 @@ header {
 
 h1, h2 {
     color: #0056b3;
-}
-
-h1 {
     margin-bottom: 10px;
-}
-
-h2 {
-    margin-bottom: 20px;
 }
 
 p, li {
@@ -61,22 +46,16 @@ p, li {
 }
 
 .profile-image {
-    width: 400px;
-    height: 200px;
-    object-fit: cover;
+    width: 60%;
+    margin: 20px auto;
+    position: relative;
+}
+
+.container6 img {
+    max-width: 60%;
+    height: auto;
     display: block;
-    margin: 50px auto;
-}
-
-.profile {
-    max-width: 600px;
     margin: 0 auto;
-    text-align: center;
-}
-
-.profile p {
-    text-align: justify;
-    line-height: 1.6;
 }
 
 /* Mode Gelap */
@@ -90,8 +69,7 @@ p, li {
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin-top: 20px;
-    position: relative;
+    margin: 20px 0;
 }
 
 .experience-table {
@@ -119,6 +97,9 @@ p, li {
     .experience-table {
         width: 90%;
     }
+    .container, .container2, .container3, .container4, .container5, .container6 {
+        width: 90%;
+    }
 }
 
 /* Animasi Fade-in */
@@ -134,40 +115,23 @@ p, li {
 }
 
 /* Efek Hover */
-.container:hover,
-.container3:hover,
-.container4:hover,
-.container5:hover,
-.container6:hover {
+.container:hover, .container3:hover, .container4:hover, .container5:hover, .container6:hover {
     transform: scale(1.05);
 }
 
 /* Tata Letak Container */
 .container-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 50px;
     width: 60%;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 /* Jarak Antar Elemen */
-.tentang-saya-container,
-.table-container,
-.portofolio-container {
-    margin-bottom: 40px;
-}
-
 .table-container {
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.tentang-saya-container,
-.portofolio-container {
-    padding: 20px;
+    margin: 40px 0;
 }
 
 /* Formulir Kontak */
@@ -220,6 +184,7 @@ button {
 
 button:hover {
     background: #0056b3;
+    color: white;
 }
 
 /* Footer */
