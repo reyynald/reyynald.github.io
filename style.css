@@ -27,6 +27,7 @@ body {
     text-align: center;
     position: relative;
     padding-top: 20px;
+    transition: 0.3s;
 }
 
 /* Header */
