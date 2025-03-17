@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Interaktif</title>
+    <link rel="stylesheet" href="web.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="name">Reynaldo Dwi Septano Baru</h1>
+            <img src="https://cdn.discordapp.com/attachments/1248252752900001843/1351175128628854887/IMG_20240726_184917_627.jpg?ex=67d96b66&is=67d819e6&hm=4f91433168a31a5222465d140eb9f6101bfd76f94b40f5c4bf61ae0dd17e1732&" alt="Foto" class="profile-main">
+        </header>
+        
+        <section class="profile">
+            <h2>Tentang Saya</h2>
+            <p id="typing-text"></p>
+        </section>
+    </div>
+    
+    <!-- Kontainer untuk tabel pengalaman hidup -->
+    <div class="table-container">
+        <table class="experience-table">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Pengalaman Hidup</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Pernah bersekolah di SMAN 4 Kendari</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sudah mengenal dunia komputer sejak SD</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Kuliah di Universitas Halu Oleo Kendari</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+    <!-- Bagian Portofolio -->
+    <div class="container2">
+        <h1>Portofolio</h1>
+    </div>
+    
+    <div class="container-wrapper">
+        <div class="container3">
+            <p>Website online shop sederhana</p>
+            <img src="file:///C:/Users/marth/OneDrive/Pictures/Screenshots/Screenshot%202025-03-17%20175425.png" alt="Foto" class="profile-image">
+        </div>
+        
+        <div class="container4">
+            <p>Aplikasi berbasis web inventaris barang</p>
+            <img src="file:///C:/Users/marth/OneDrive/Pictures/Screenshots/Screenshot%202024-12-08%20192134.png" alt="Foto" class="profile-image">
+        </div>
+        
+        <div class="container5">
+            <p>Memodifikasi weapon pada game GTA 5</p>
+            <img src="file:///C:/Users/marth/OneDrive/Pictures/Screenshots/Screenshot%202025-03-17%20181744.png" alt="Foto" class="profile-image">
+        </div>
+        
+        <div class="container6">
+            <p>Memodifikasi Grafik pada game GTA 5</p>
+            <img src="https://media.discordapp.net/attachments/994678353258885160/1112788866244550806/-2.png?ex=67d8ff24&is=67d7ada4&hm=8fb631e45e0507e8e5654a7024d3eac50638d9205ce4c22644ab4f44d248c8ce&=&format=webp&quality=lossless&width=1423&height=800" alt="Foto" class="profile-image">
+        </div>
+    </div>
+    
+    <!-- Bagian Kontak -->
+    <div class="contact-container">
+        <h2>Kontak</h2>
+        <div class="form-container">
+            <label for="nama">Nama</label>
+            <input type="text" id="nama" placeholder="Masukkan nama Anda">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Masukkan email Anda">
+
+            <label for="pesan">Pesan</label>
+            <textarea id="pesan" placeholder="Tulis pesan Anda"></textarea>
+
+            <button onclick="kirimWhatsApp()">Kirim ke WhatsApp</button>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Riot Vanguard</p>
+    </footer>
+</body>
+</html>
