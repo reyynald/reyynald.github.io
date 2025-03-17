@@ -1,0 +1,246 @@
+/* Gaya Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('https://images.wallpapersden.com/image/download/stargazing-hd-pixel-art_bWdqbGuUmZqaraWkpJRnbmhnrWduaGc.jpg') no-repeat center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Navbar */
+
+/* Kontainer Utama */
+.container,
+.container2,
+.container3,
+.container4,
+.container5,
+.container6 {
+    width: 60%;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+}
+
+h1, h2 {
+    color: #0056b3;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 18px;
+}
+
+/* Profil */
+.profile-main {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+}
+
+.profile-image {
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: 50px auto;
+}
+
+.profile {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.profile p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Mode Gelap */
+.dark-mode {
+    background: linear-gradient(to bottom, #80c1ff, #3399ff);
+}
+
+/* Tabel Pengalaman */
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.experience-table {
+    width: 60%;
+    max-width: 700px;
+    border-collapse: collapse;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.experience-table th, .experience-table td {
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+}
+
+.experience-table th {
+    background-color: rgba(0, 102, 204, 0.8);
+}
+
+/* Responsivitas */
+@media (max-width: 768px) {
+    .experience-table {
+        width: 90%;
+    }
+}
+
+/* Animasi Fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Efek Hover */
+.container:hover,
+.container3:hover,
+.container4:hover,
+.container5:hover,
+.container6:hover {
+    transform: scale(1.05);
+}
+
+/* Tata Letak Container */
+.container-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    width: 60%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+/* Jarak Antar Elemen */
+.tentang-saya-container,
+.table-container,
+.portofolio-container {
+    margin-bottom: 40px;
+}
+
+.table-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.tentang-saya-container,
+.portofolio-container {
+    padding: 20px;
+}
+
+/* Formulir Kontak */
+.contact-container {
+    background-color: #6c7981;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+    margin: 50px auto;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    background: #00ff62;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px;
+    width: 100%;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+}
+
+/* Efek Mengetik */
+#typing-text {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    white-space: pre-wrap;
+    border-right: 2px solid white;
+    padding-right: 2px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
